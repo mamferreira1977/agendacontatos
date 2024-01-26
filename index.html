@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Agenda de Contatos</h1>
+
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+
+            </div>
+        </div>
+        <form id="form-contato">
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <label for="inputNome">Nome (*)</label>
+                    <input type="text" class="form-control" id="nome" required placeholder="Informe o seu nome "
+                        autocomplete="off">
+                </div>
+                <div class="col-sm-4">
+                    <label for="inputTelefone">Telefone (*)</label>
+                    <input type="text" class="form-control" id="telefone" required placeholder="Informe o telefone"
+                        autocomplete="off">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <button style="background-color: rgb(10, 235, 10); border-color:white" type="button"
+                        onclick="adicionarContato()">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="contatosTable" class="table table-striped">
+                    <thead>
+                        <tr>
+
+                            <th scope="col">Nome</th>
+                            <th scope="col">Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-contatos">
+                        <tr>
+                            <td scope="row"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
